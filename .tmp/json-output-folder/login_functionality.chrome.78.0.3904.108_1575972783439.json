@@ -1,0 +1,88 @@
+[
+  {
+    "description": "    As a tester\n    In order to ensure Login Functionality works,\n    I want to verify with valid credentials",
+    "keyword": "Feature",
+    "name": "Login functionality",
+    "line": 1,
+    "id": "login-functionality",
+    "tags": [],
+    "uri": "src/features/valid_login.feature",
+    "elements": [
+      {
+        "id": "login-functionality;logging-in-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Logging in with valid credentials",
+        "tags": [
+          {
+            "name": "@positiveScenario",
+            "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am at the Login page",
+            "match": {
+              "location": "typeScript/src/steps/LoginPage_Steps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 861000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I log in using “cloudportal33” and “mbedcloud123”",
+            "match": {
+              "location": "typeScript/src/steps/LoginPage_Steps.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2444000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the page title \"Usage dashboard - Pelion Device Management Portal\"",
+            "match": {
+              "location": "typeScript/src/steps/DashboardPage_Steps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6311000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "78.0.3904.108"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]
